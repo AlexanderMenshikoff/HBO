@@ -1,0 +1,347 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 1260px;
+  height: 100%;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+a,
+.hbo-logo {
+  cursor: pointer;
+}
+
+.sign-in-button {
+  width: 121px;
+  height: 40px;
+  background: #0059c1;
+  border-radius: 12px;
+  border-style: none;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
+.image-tlou-container {
+  height: 500px;
+  background-image: url("/img/Joel&Ellie.png");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.image-tlou-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
+}
+
+.tlou-logo {
+  width: 660px;
+  height: 140px;
+  margin-top: 260px;
+  margin-bottom: 30px;
+}
+
+.line-block {
+  display: flex;
+  justify-content: center;
+}
+
+.trailer-attributes-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  line-height: 44px;
+  margin-top: 10px;
+}
+
+.trailer-button {
+  background-color: black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2.5px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border-style: none;
+  z-index: 3;
+}
+
+.play-button {
+  margin: 2px 0 0 5px;
+  width: 14px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.trailer-text {
+  text-transform: uppercase;
+  margin-left: 10px;
+  z-index: 3;
+}
+
+.hbo-original-title,
+.subscriptions-title {
+  margin-top: 90px;
+}
+
+.cards-container {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.card1 {
+  margin-right: 15px;
+  border-radius: 5px;
+  background-image: url("/img/card1.png");
+  width: 210px;
+  height: 300px;
+}
+
+.card1-up-space-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card1-up-space-star-img {
+  width: 15px;
+  height: 15px;
+}
+
+.card1-up-space-rate {
+  margin-left: 5px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #e3b100;
+}
+
+.card1-up-space-year {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  align-content: right;
+}
+
+.card1-middle-space-container {
+  margin: 50px 0 0 20px;
+}
+
+.card1-middle-space-season-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card1-middle-space-title-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1px;
+}
+
+.card1-middle-space-main-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #e8e8e8;
+}
+
+.card1-down-space-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.watch-button-container {
+  width: 170px;
+  height: 38px;
+  background-color: #0059c1;
+  border-style: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  align-items: center;
+}
+
+.card1-down-space-play-button {
+  width: 12px;
+  height: 15px;
+}
+
+.card1-down-space-watch-text {
+  text-transform: uppercase;
+}
+
+.card2 {
+  margin-right: 15px;
+  border-radius: 5px;
+  background-image: url("/img/card2.png");
+  width: 210px;
+  height: 300px;
+}
+
+.card3 {
+  margin-right: 15px;
+  border-radius: 5px;
+  background-image: url("/img/card3.png");
+  width: 210px;
+  height: 300px;
+}
+
+.card4 {
+  margin-right: 15px;
+  border-radius: 5px;
+  background-image: url("/img/card4.png");
+  width: 210px;
+  height: 300px;
+}
+
+.card5 {
+  margin-right: 15px;
+  border-radius: 5px;
+  background-image: url("/img/card5.png");
+  width: 210px;
+  height: 300px;
+}
+
+.card6 {
+  margin-right: 15px;
+  border-radius: 5px;
+  background-image: url("/img/card6.png");
+  width: 200px;
+  height: 300px;
+}
+
+.card7 {
+  margin-right: 15px;
+  border-radius: 5px;
+  background-image: url("/img/card7.png");
+  width: 200px;
+  height: 300px;
+}
+
+.subscriptions-container {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.membership-content-block {
+  margin-right: 15px;
+  width: 500px;
+  height: 250px;
+  background-color: #0059c1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 193, 0.5) 0%,
+    rgba(13, 0, 123, 0.5) 100%
+  );
+  border: 1px solid rgba(0, 89, 193, 0.5);
+  border-radius: 12px;
+  opacity: 0.2;
+}
+
+.membership-trial-text {
+  text-align: center;
+}
+
+ul {
+  line-height: 35px;
+}
+
+.membership-buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.membership-buy-button {
+  width: 120px;
+  height: 35px;
+  background: #e38b00;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+  margin-right: 10px;
+}
+
+.membership-trial-button {
+  width: 120px;
+  height: 35px;
+  margin-right: 20px;
+  background-color: #0059c1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 193, 0.5) 0%,
+    rgba(13, 0, 123, 0.5) 100%
+  );
+  border: 1px solid #e38b00;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.membership-content-center-block {
+  margin-right: 15px;
+  width: 500px;
+  height: 250px;
+  background-color: #0059c1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 193, 0.5) 0%,
+    rgba(13, 0, 123, 0.5) 100%
+  );
+  border: 1px solid rgba(0, 89, 193, 0.5);
+  border-radius: 12px;
+}
