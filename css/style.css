@@ -24,15 +24,31 @@ a,
   cursor: pointer;
 }
 
+.hbo-logo:hover {
+  opacity: 0.8;
+}
+
+a:hover {
+  color: #a5a5a5;
+}
+
 .sign-in-button {
   width: 121px;
   height: 40px;
-  background: #0059c1;
+  background-color: #0059c1;
   border-radius: 12px;
   border-style: none;
   text-transform: uppercase;
   color: white;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.sign-in-button:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.2, 1.2);
+  background-color: #ffffff;
+  color: black;
 }
 
 .image-tlou-container {
@@ -85,6 +101,13 @@ a,
   border-radius: 50px;
   border-style: none;
   z-index: 3;
+  transition: all 0.5s ease-in-out;
+}
+
+.trailer-button:hover {
+  background-color: rgb(80, 80, 80);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1, 1.1);
 }
 
 .play-button {
@@ -118,15 +141,23 @@ a,
   flex-wrap: nowrap;
 }
 
-.card1 {
-  margin-right: 15px;
-  border-radius: 5px;
-  background-image: url("/img/card1.png");
+.card-opacity-container {
+  position: absolute;
+  opacity: 0;
   width: 210px;
+  border-radius: 15px;
   height: 300px;
+  transition: all 0.2s ease-in-out;
 }
 
-.card1-up-space-container {
+.card-opacity-container:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(15px);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-up-space-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -140,12 +171,12 @@ a,
   align-items: center;
 }
 
-.card1-up-space-star-img {
+.card-up-space-star-img {
   width: 15px;
   height: 15px;
 }
 
-.card1-up-space-rate {
+.card-up-space-rate {
   margin-left: 5px;
   font-family: "Lato";
   font-style: normal;
@@ -155,7 +186,7 @@ a,
   color: #e3b100;
 }
 
-.card1-up-space-year {
+.card-up-space-year {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Lato";
   font-style: normal;
@@ -165,11 +196,11 @@ a,
   align-content: right;
 }
 
-.card1-middle-space-container {
+.card-middle-space-container {
   margin: 50px 0 0 20px;
 }
 
-.card1-middle-space-season-text {
+.card-middle-space-season-text {
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
@@ -178,7 +209,7 @@ a,
   color: rgba(255, 255, 255, 0.5);
 }
 
-.card1-middle-space-title-text {
+.card-middle-space-title-text {
   font-family: "Lato";
   font-style: normal;
   font-weight: 900;
@@ -186,7 +217,7 @@ a,
   line-height: 1px;
 }
 
-.card1-middle-space-main-text {
+.card-middle-space-main-text {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -195,7 +226,7 @@ a,
   color: #e8e8e8;
 }
 
-.card1-down-space-container {
+.card-down-space-container {
   margin-top: 40px;
   display: flex;
   justify-content: center;
@@ -211,63 +242,107 @@ a,
   justify-content: space-around;
   cursor: pointer;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 
-.card1-down-space-play-button {
+.watch-button-container:hover {
+  background-color: #e38b00;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-down-space-play-button {
   width: 12px;
   height: 15px;
 }
 
-.card1-down-space-watch-text {
+.card-down-space-watch-text {
   text-transform: uppercase;
+}
+
+.card1 {
+  margin-right: 15px;
+  border-radius: 15px;
+  background-image: url("/img/card2.png");
+  width: 210px;
+  height: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card1:hover {
+  transform: scale(1.2, 1.2);
+  margin: 0 30px 0 15px;
 }
 
 .card2 {
   margin-right: 15px;
-  border-radius: 5px;
-  background-image: url("/img/card2.png");
+  border-radius: 15px;
+  background-image: url("/img/card3.png");
   width: 210px;
   height: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card2:hover {
+  transform: scale(1.2, 1.2);
+  margin: 0 30px 0 15px;
 }
 
 .card3 {
   margin-right: 15px;
-  border-radius: 5px;
-  background-image: url("/img/card3.png");
+  border-radius: 15px;
+  background-image: url("/img/card4.png");
   width: 210px;
   height: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card3:hover {
+  transform: scale(1.2, 1.2);
+  margin: 0 30px 0 15px;
 }
 
 .card4 {
   margin-right: 15px;
-  border-radius: 5px;
-  background-image: url("/img/card4.png");
+  border-radius: 15px;
+  background-image: url("/img/card5.png");
   width: 210px;
   height: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card4:hover {
+  transform: scale(1.2, 1.2);
+  margin: 0 30px 0 15px;
 }
 
 .card5 {
   margin-right: 15px;
-  border-radius: 5px;
-  background-image: url("/img/card5.png");
+  border-radius: 15px;
+  background-image: url("/img/card6.png");
   width: 210px;
   height: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card5:hover {
+  transform: scale(1.2, 1.2);
+  margin: 0 30px 0 15px;
 }
 
 .card6 {
   margin-right: 15px;
-  border-radius: 5px;
-  background-image: url("/img/card6.png");
-  width: 200px;
+  border-radius: 15px;
+  background-image: url("/img/card7.png");
+  width: 210px;
   height: 300px;
+  transition: all 0.5s ease-in-out;
+  background-size: cover;
 }
 
-.card7 {
-  margin-right: 15px;
-  border-radius: 5px;
-  background-image: url("/img/card7.png");
-  width: 200px;
-  height: 300px;
+.card6:hover {
+  transform: scale(1.2, 1.2);
+  margin: 0 30px 0 15px;
 }
 
 .subscriptions-container {
@@ -275,6 +350,10 @@ a,
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+.subscriptions-container:hover .membership-content-block:not(:hover) {
+  opacity: 0.1;
 }
 
 .membership-content-block {
@@ -289,7 +368,12 @@ a,
   );
   border: 1px solid rgba(0, 89, 193, 0.5);
   border-radius: 12px;
-  opacity: 0.2;
+  transition: all 0.8s ease-in-out;
+}
+
+.membership-content-block:hover {
+  transform: scale(1.3, 1.3);
+  transition: all 0.8s ease-in-out;
 }
 
 .membership-trial-text {
@@ -308,12 +392,18 @@ ul {
 .membership-buy-button {
   width: 120px;
   height: 35px;
-  background: #e38b00;
+  background-color: #e38b00;
   border-radius: 12px;
   color: white;
   cursor: pointer;
   border-style: none;
   margin-right: 10px;
+}
+
+.membership-buy-button:hover {
+  background-color: #0059c1;
+  border: 1px solid #e38b00;
+  transition: all 0.5s ease-in-out;
 }
 
 .membership-trial-button {
@@ -332,16 +422,8 @@ ul {
   cursor: pointer;
 }
 
-.membership-content-center-block {
-  margin-right: 15px;
-  width: 500px;
-  height: 250px;
+.membership-trial-button:hover {
+  border: 1px solid #e38b00;
   background-color: #0059c1;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 89, 193, 0.5) 0%,
-    rgba(13, 0, 123, 0.5) 100%
-  );
-  border: 1px solid rgba(0, 89, 193, 0.5);
-  border-radius: 12px;
+  transition: all 0.5s ease-in-out;
 }
