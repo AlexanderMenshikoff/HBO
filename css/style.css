@@ -78,7 +78,7 @@ body {
 
 .creation-container {
   height: 595px;
-  background-image: url("/img/Joel&Ellie.png");
+  background-image: url("../img/Joel&Ellie.png");
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -303,7 +303,7 @@ body {
 .card1 {
   margin-right: 15px;
   border-radius: 15px;
-  background-image: url("/img/card2.png");
+  background-image: url("../img/card2.png");
   width: 210px;
   height: 300px;
   transition: all 0.1s ease-in-out;
@@ -318,7 +318,7 @@ body {
 .card2 {
   margin-right: 15px;
   border-radius: 15px;
-  background-image: url("/img/card3.png");
+  background-image: url("../img/card3.png");
   width: 210px;
   height: 300px;
   transition: all 0.1s ease-in-out;
@@ -333,7 +333,7 @@ body {
 .card3 {
   margin-right: 15px;
   border-radius: 15px;
-  background-image: url("/img/card4.png");
+  background-image: url("../img/card4.png");
   width: 210px;
   height: 300px;
   transition: all 0.1s ease-in-out;
@@ -348,7 +348,7 @@ body {
 .card4 {
   margin-right: 15px;
   border-radius: 15px;
-  background-image: url("/img/card5.png");
+  background-image: url("../img/card5.png");
   width: 210px;
   height: 300px;
   transition: all 0.1s ease-in-out;
@@ -363,7 +363,7 @@ body {
 .card5 {
   margin-right: 15px;
   border-radius: 15px;
-  background-image: url("/img/card6.png");
+  background-image: url("../img/card6.png");
   width: 210px;
   height: 300px;
   transition: all 0.1s ease-in-out;
@@ -378,7 +378,7 @@ body {
 .card6 {
   margin-right: 15px;
   border-radius: 15px;
-  background-image: url("/img/card7.png");
+  background-image: url("../img/card7.png");
   width: 210px;
   height: 300px;
   transition: all 0.1s ease-in-out;
