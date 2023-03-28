@@ -187,14 +187,14 @@ body {
   width: 210px;
   border-radius: 15px;
   height: 300px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .card-opacity-container:hover {
   opacity: 1;
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(15px);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .card-up-space-container {
@@ -214,6 +214,7 @@ body {
 .card-up-space-star-img {
   width: 15px;
   height: 15px;
+  margin-top: -2px;
 }
 
 .card-up-space-rate {
@@ -306,12 +307,13 @@ body {
   background-image: url("/img/card2.png");
   width: 210px;
   height: 300px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .card1:hover {
   transform: scale(1.2, 1.2);
   margin: 0 30px 0 15px;
+  transition: all 0.1s ease-in-out;
 }
 
 .card2 {
@@ -320,12 +322,13 @@ body {
   background-image: url("/img/card3.png");
   width: 210px;
   height: 300px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .card2:hover {
   transform: scale(1.2, 1.2);
   margin: 0 30px 0 15px;
+  transition: all 0.1s ease-in-out;
 }
 
 .card3 {
@@ -334,12 +337,13 @@ body {
   background-image: url("/img/card4.png");
   width: 210px;
   height: 300px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .card3:hover {
   transform: scale(1.2, 1.2);
   margin: 0 30px 0 15px;
+  transition: all 0.1s ease-in-out;
 }
 
 .card4 {
@@ -348,12 +352,13 @@ body {
   background-image: url("/img/card5.png");
   width: 210px;
   height: 300px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .card4:hover {
   transform: scale(1.2, 1.2);
   margin: 0 30px 0 15px;
+  transition: all 0.1s ease-in-out;
 }
 
 .card5 {
@@ -362,12 +367,13 @@ body {
   background-image: url("/img/card6.png");
   width: 210px;
   height: 300px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .card5:hover {
   transform: scale(1.2, 1.2);
   margin: 0 30px 0 15px;
+  transition: all 0.1s ease-in-out;
 }
 
 .card6 {
@@ -376,13 +382,14 @@ body {
   background-image: url("/img/card7.png");
   width: 210px;
   height: 300px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
   background-size: cover;
 }
 
 .card6:hover {
   transform: scale(1.2, 1.2);
   margin: 0 30px 0 15px;
+  transition: all 0.1s ease-in-out;
 }
 
 .subscriptions-container {
@@ -390,10 +397,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-}
-
-.subscriptions-container:hover .membership-content-block:not(:hover) {
-  opacity: 0.1;
 }
 
 .membership-content-block {
@@ -408,12 +411,22 @@ body {
   );
   border: 1px solid rgba(0, 89, 193, 0.5);
   border-radius: 12px;
-  transition: all 0.8s ease-in-out;
+  opacity: 0.1;
 }
 
-.membership-content-block:hover {
-  transform: scale(1.3, 1.3);
-  transition: all 0.8s ease-in-out;
+.membership-content-block-main {
+  margin-right: 15px;
+  width: 500px;
+  height: 250px;
+  background-color: #0059c1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 193, 0.5) 0%,
+    rgba(13, 0, 123, 0.5) 100%
+  );
+  border: 1px solid rgba(0, 89, 193, 0.5);
+  border-radius: 12px;
+  transform: scale(1.2, 1.2);
 }
 
 .membership-trial-text {
@@ -429,7 +442,8 @@ ul {
   justify-content: end;
 }
 
-.membership-buy-button {
+.membership-buy-button,
+.membership-buy-button-main {
   width: 120px;
   height: 35px;
   background-color: #e38b00;
@@ -440,13 +454,14 @@ ul {
   margin-right: 10px;
 }
 
-.membership-buy-button:hover {
+.membership-buy-button-main:hover {
   background-color: #0059c1;
   border: 1px solid #e38b00;
   transition: all 0.5s ease-in-out;
 }
 
-.membership-trial-button {
+.membership-trial-button,
+.membership-trial-button-main {
   width: 120px;
   height: 35px;
   margin-right: 20px;
@@ -462,7 +477,7 @@ ul {
   cursor: pointer;
 }
 
-.membership-trial-button:hover {
+.membership-trial-button-main:hover {
   border: 1px solid #e38b00;
   background-color: #0059c1;
   transition: all 0.5s ease-in-out;
