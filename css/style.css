@@ -26,13 +26,13 @@ body {
   width: 500px;
 }
 
-.header__link-left_position {
+.header__link_left-position {
   display: flex;
   justify-content: space-between;
   width: 140px;
 }
 
-.header__link-right_position {
+.header__link_right-position {
   display: flex;
   justify-content: space-between;
   width: 230px;
@@ -52,12 +52,12 @@ body {
   opacity: 1;
 }
 
-.hbo-logo:hover {
+.company-logo:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
-.sign-in-button {
+.header__sign-in-button {
   width: 121px;
   height: 40px;
   background-color: #0059c1;
@@ -69,14 +69,14 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.sign-in-button:hover {
+.header__sign-in-button:hover {
   transition: all 0.5s ease-in-out;
   transform: scale(1.2, 1.2);
   background-color: #ffffff;
   color: black;
 }
 
-.image-tlou-container {
+.creation-container {
   height: 595px;
   background-image: url("/img/Joel&Ellie.png");
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ body {
   align-items: end;
 }
 
-.image-tlou-container:after {
+.creation-container:after {
   content: "";
   position: absolute;
   top: 0;
@@ -98,7 +98,7 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
 }
 
-.tlou-logo {
+.creation-logo__img {
   width: 660px;
   height: 140px;
   margin-bottom: 30px;
@@ -106,7 +106,7 @@ body {
   position: relative;
 }
 
-.line-block-container {
+.line-block__container {
   display: flex;
   justify-content: center;
 }
@@ -115,29 +115,29 @@ body {
   display: flex;
   justify-content: left;
   background-color: #ffffff;
-  height: 2px;
+  height: 1px;
   border-radius: 5px;
   width: 500px;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 3;
   position: relative;
 }
 
-.line-block-stripe {
-  height: 2px;
+.line-block__stripe {
+  height: 1px;
   width: 100px;
   border-radius: 5px;
   background-color: #e3b100;
 }
 
-.trailer-attributes-container {
+.trailer-attributes__container {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   line-height: 44px;
 }
 
-.trailer-button {
+.trailer__button {
   background-color: black;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2.5px);
@@ -156,19 +156,18 @@ body {
   cursor: pointer;
 }
 
-.trailer-text {
+.trailer__text {
   text-transform: uppercase;
   margin-left: 10px;
   z-index: 3;
   cursor: pointer;
 }
 
-.hbo-original-title,
-.subscriptions-title {
+.topic__title {
   margin-top: 90px;
 }
 
-.cards-container {
+.cards__container {
   height: 300px;
   display: flex;
   flex-direction: row;
@@ -181,7 +180,7 @@ body {
   flex-wrap: nowrap;
 }
 
-.card-opacity-container {
+.card__container_opacity {
   position: absolute;
   opacity: 0;
   width: 210px;
@@ -190,14 +189,14 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-.card-opacity-container:hover {
+.card__container_opacity:hover {
   opacity: 1;
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(15px);
   transition: all 0.1s ease-in-out;
 }
 
-.card-up-space-container {
+.card__container_top-space {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -211,13 +210,13 @@ body {
   align-items: center;
 }
 
-.card-up-space-star-img {
+.card__star-img_top-space {
   width: 15px;
   height: 15px;
   margin-top: -2px;
 }
 
-.card-up-space-rate {
+.card__rate_top-space {
   margin-left: 5px;
   font-family: "Lato";
   font-style: normal;
@@ -227,7 +226,7 @@ body {
   color: #e3b100;
 }
 
-.card-up-space-year {
+.card__year_top-space {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Lato";
   font-style: normal;
@@ -237,11 +236,11 @@ body {
   align-content: right;
 }
 
-.card-middle-space-container {
+.card__container_middle-space {
   margin: 50px 0 0 20px;
 }
 
-.card-middle-space-season-text {
+.card__season-text_middle-space {
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
@@ -250,7 +249,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.card-middle-space-title-text {
+.card__title-text_middle-space {
   font-family: "Lato";
   font-style: normal;
   font-weight: 900;
@@ -258,7 +257,7 @@ body {
   line-height: 1px;
 }
 
-.card-middle-space-main-text {
+.card__main-text_middle-space {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -267,13 +266,13 @@ body {
   color: #e8e8e8;
 }
 
-.card-down-space-container {
+.card__container_down-space {
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
-.watch-button-container {
+.watch-button__container {
   width: 170px;
   height: 38px;
   background-color: #0059c1;
@@ -286,18 +285,18 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.watch-button-container:hover {
+.watch-button__container:hover {
   background-color: #e38b00;
   color: rgb(255, 255, 255);
   transition: all 0.5s ease-in-out;
 }
 
-.card-down-space-play-button {
+.card__play-button_down-space {
   width: 12px;
   height: 15px;
 }
 
-.card-down-space-watch-text {
+.card__watch-text_down-space {
   text-transform: uppercase;
 }
 
@@ -399,7 +398,7 @@ body {
   flex-wrap: nowrap;
 }
 
-.membership-content-block {
+.membership-content__block {
   margin-right: 15px;
   width: 500px;
   height: 250px;
@@ -414,7 +413,7 @@ body {
   opacity: 0.1;
 }
 
-.membership-content-block-main {
+.membership-content__block-main {
   margin-right: 15px;
   width: 500px;
   height: 250px;
@@ -429,7 +428,7 @@ body {
   transform: scale(1.2, 1.2);
 }
 
-.membership-trial-text {
+.membership-content__trial-text {
   text-align: center;
 }
 
@@ -437,13 +436,13 @@ ul {
   line-height: 35px;
 }
 
-.membership-buttons {
+.membership-content__buttons-container {
   display: flex;
   justify-content: end;
 }
 
-.membership-buy-button,
-.membership-buy-button-main {
+.membership-content__buy-button,
+.membership-content__buy-button_main {
   width: 120px;
   height: 35px;
   background-color: #e38b00;
@@ -454,14 +453,14 @@ ul {
   margin-right: 10px;
 }
 
-.membership-buy-button-main:hover {
+.membership-content__buy-button_main:hover {
   background-color: #0059c1;
   border: 1px solid #e38b00;
   transition: all 0.5s ease-in-out;
 }
 
-.membership-trial-button,
-.membership-trial-button-main {
+.membership-content__trial-button,
+.membership-content__trial-button_main {
   width: 120px;
   height: 35px;
   margin-right: 20px;
@@ -477,7 +476,7 @@ ul {
   cursor: pointer;
 }
 
-.membership-trial-button-main:hover {
+.membership-content__trial-button_main:hover {
   border: 1px solid #e38b00;
   background-color: #0059c1;
   transition: all 0.5s ease-in-out;
