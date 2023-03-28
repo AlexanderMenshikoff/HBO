@@ -52,11 +52,8 @@ body {
   opacity: 1;
 }
 
-.hbo-logo {
-  cursor: pointer;
-}
-
 .hbo-logo:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -80,13 +77,14 @@ body {
 }
 
 .image-tlou-container {
-  height: 500px;
+  height: 595px;
   background-image: url("/img/Joel&Ellie.png");
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   position: relative;
   z-index: 1;
+  align-items: end;
 }
 
 .image-tlou-container:after {
@@ -103,21 +101,40 @@ body {
 .tlou-logo {
   width: 660px;
   height: 140px;
-  margin-top: 260px;
   margin-bottom: 30px;
+  z-index: 3;
+  position: relative;
+}
+
+.line-block-container {
+  display: flex;
+  justify-content: center;
 }
 
 .line-block {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  background-color: #ffffff;
+  height: 2px;
+  border-radius: 5px;
+  width: 500px;
+  opacity: 0.3;
+  z-index: 3;
+  position: relative;
+}
+
+.line-block-stripe {
+  height: 2px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #e3b100;
 }
 
 .trailer-attributes-container {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   line-height: 44px;
-  margin-top: 10px;
 }
 
 .trailer-button {
@@ -129,13 +146,7 @@ body {
   border-radius: 50px;
   border-style: none;
   z-index: 3;
-  transition: all 0.5s ease-in-out;
-}
-
-.trailer-button:hover {
-  background-color: rgb(80, 80, 80);
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.1, 1.1);
+  cursor: pointer;
 }
 
 .play-button {
@@ -149,6 +160,7 @@ body {
   text-transform: uppercase;
   margin-left: 10px;
   z-index: 3;
+  cursor: pointer;
 }
 
 .hbo-original-title,
