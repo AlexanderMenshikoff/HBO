@@ -5,15 +5,16 @@ body {
   color: white;
   font-family: "Lato", sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 .container {
-  width: 1260px;
-  height: 100%;
+  width: 1274px;
+  height: 1550px;
 }
 
 .header {
-  height: 100px;
+  height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,8 +29,8 @@ body {
 
 .header__link_left-position {
   display: flex;
-  justify-content: space-between;
-  width: 140px;
+  justify-content: space-around;
+  width: 178px;
 }
 
 .header__link_right-position {
@@ -67,6 +68,9 @@ body {
   color: white;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
 }
 
 .header__sign-in-button:hover {
@@ -77,6 +81,7 @@ body {
 }
 
 .creation-container {
+  width: 1274px;
   height: 595px;
   background-image: url("../img/Joel&Ellie.png");
   background-repeat: no-repeat;
@@ -96,6 +101,10 @@ body {
   right: 0;
   z-index: 2;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
+}
+
+.video-container {
+  margin-bottom: 15px;
 }
 
 .creation-logo__img {
@@ -135,6 +144,7 @@ body {
   display: flex;
   justify-content: center;
   line-height: 44px;
+  align-items: center;
 }
 
 .trailer__button {
@@ -161,39 +171,64 @@ body {
   margin-left: 10px;
   z-index: 3;
   cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .topic__title {
-  margin-top: 90px;
+  margin-top: 35px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 .cards__container {
-  height: 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  height: 320px;
+  max-width: max-content;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .cards {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  width: max-content;
+}
+
+.card {
+  margin-right: 24px;
+  border-radius: 15px;
+  width: 210px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card:hover {
+  transform: scale(1, 1);
 }
 
 .card__container_opacity {
-  position: absolute;
   opacity: 0;
   width: 210px;
   border-radius: 15px;
   height: 300px;
-  transition: all 0.1s ease-in-out;
 }
 
 .card__container_opacity:hover {
+  position: absolute;
   opacity: 1;
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(15px);
-  transition: all 0.1s ease-in-out;
 }
 
 .card__container_top-space {
@@ -201,7 +236,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 10px;
+  margin: 10px 20px 0 20px;
 }
 
 .rating-container {
@@ -237,7 +272,7 @@ body {
 }
 
 .card__container_middle-space {
-  margin: 50px 0 0 20px;
+  margin: 45px 0 0 20px;
 }
 
 .card__season-text_middle-space {
@@ -279,10 +314,14 @@ body {
   border-style: none;
   border-radius: 12px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   cursor: pointer;
   align-items: center;
   transition: all 0.5s ease-in-out;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .watch-button__container:hover {
@@ -294,101 +333,12 @@ body {
 .card__play-button_down-space {
   width: 12px;
   height: 15px;
+  margin-left: 16px;
 }
 
 .card__watch-text_down-space {
   text-transform: uppercase;
-}
-
-.card1 {
-  margin-right: 15px;
-  border-radius: 15px;
-  background-image: url("../img/card2.png");
-  width: 210px;
-  height: 300px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card1:hover {
-  transform: scale(1.2, 1.2);
-  margin: 0 30px 0 15px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card2 {
-  margin-right: 15px;
-  border-radius: 15px;
-  background-image: url("../img/card3.png");
-  width: 210px;
-  height: 300px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card2:hover {
-  transform: scale(1.2, 1.2);
-  margin: 0 30px 0 15px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card3 {
-  margin-right: 15px;
-  border-radius: 15px;
-  background-image: url("../img/card4.png");
-  width: 210px;
-  height: 300px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card3:hover {
-  transform: scale(1.2, 1.2);
-  margin: 0 30px 0 15px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card4 {
-  margin-right: 15px;
-  border-radius: 15px;
-  background-image: url("../img/card5.png");
-  width: 210px;
-  height: 300px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card4:hover {
-  transform: scale(1.2, 1.2);
-  margin: 0 30px 0 15px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card5 {
-  margin-right: 15px;
-  border-radius: 15px;
-  background-image: url("../img/card6.png");
-  width: 210px;
-  height: 300px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card5:hover {
-  transform: scale(1.2, 1.2);
-  margin: 0 30px 0 15px;
-  transition: all 0.1s ease-in-out;
-}
-
-.card6 {
-  margin-right: 15px;
-  border-radius: 15px;
-  background-image: url("../img/card7.png");
-  width: 210px;
-  height: 300px;
-  transition: all 0.1s ease-in-out;
-  background-size: cover;
-}
-
-.card6:hover {
-  transform: scale(1.2, 1.2);
-  margin: 0 30px 0 15px;
-  transition: all 0.1s ease-in-out;
+  margin-right: 16px;
 }
 
 .subscriptions-container {
@@ -399,7 +349,6 @@ body {
 }
 
 .membership-content__block {
-  margin-right: 15px;
   width: 500px;
   height: 250px;
   background-color: #0059c1;
@@ -410,35 +359,35 @@ body {
   );
   border: 1px solid rgba(0, 89, 193, 0.5);
   border-radius: 12px;
+  transform: scale(1.1, 1.1);
   opacity: 0.1;
 }
 
 .membership-content__block-main {
-  margin-right: 15px;
-  width: 500px;
-  height: 250px;
-  background-color: #0059c1;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 89, 193, 0.5) 0%,
-    rgba(13, 0, 123, 0.5) 100%
-  );
-  border: 1px solid rgba(0, 89, 193, 0.5);
-  border-radius: 12px;
   transform: scale(1.2, 1.2);
+  opacity: 1;
 }
 
 .membership-content__trial-text {
   text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 20px;
+  padding: 5px 5px 0 5px;
+  margin: 30px 3px 0 0;
 }
 
 ul {
-  line-height: 35px;
+  margin: 29px 0 16px 10px;
+  font-size: 13px;
+  line-height: 30px;
 }
 
 .membership-content__buttons-container {
   display: flex;
   justify-content: end;
+  margin-right: 10px;
 }
 
 .membership-content__buy-button,
@@ -451,6 +400,12 @@ ul {
   cursor: pointer;
   border-style: none;
   margin-right: 10px;
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  justify-content: center;
+  align-items: center;
 }
 
 .membership-content__buy-button_main:hover {
@@ -474,6 +429,12 @@ ul {
   border-radius: 12px;
   color: white;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 .membership-content__trial-button_main:hover {
