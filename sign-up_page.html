@@ -16,7 +16,9 @@
   <body>
     <section class="container">
       <header class="header">
-        <img class="company-logo" src="./img/hbo-logo.png" alt="" />
+        <a href="./index.html"
+        ><img class="company-logo" src="./img/hbo-logo.png" alt=""
+      /></a>
         <nav class="header__link-container">
           <div class="header__link_left-position">
             <a class="header__link" href="/#">series</a>
@@ -27,9 +29,9 @@
             <a class="header__link" href="/#">schedule</a>
           </div>
         </nav>
-        <button class="header__sign-in-button">
-          <a class="sign-in-button__link" href="./sign-up_page.html">sign in</a>
-        </button>
+        <a class="sign-in-button__link" href="./sign-up_page.html"
+          ><button class="header__sign-in-button">sign in</button></a
+        >
       </header>
 
       <h1 class="main-title">Sign up</h1>
@@ -37,35 +39,55 @@
       <h2 class="sub-title">Choose your HBO Max plan</h2>
 
       <section class="plans-container">
-        <div class="membership-content__block">
-          <div class="membership-content__title-container">
-            <div class="membership-content__trial-title">Monthly</div>
-            <div class="membership-content__trial-price">7.99$/mo</div>
+        <div class="plan-content__block">
+          <div class="plan-content__title-container">
+            <div class="plan-content__trial-title">Monthly</div>
+            <div class="plan-content__trial-price">7.99$/mo</div>
           </div>
-          <div class="membership-content__trial-text">
+          <div class="plan-content__trial-text">
             You can opt out at any time.
           </div>
-          <div class="membership-content__buttons-container">
-            <button class="membership-content__buy-button">Choose</button>
+          <div class="plan-content__buttons-container">
+            <button class="plan-content__buy-button">Choose</button>
           </div>
         </div>
 
-        <div class="membership-content__block membership-content__block-main">
+        <div class="plan-content__block plan-content__block-main">
           <img src="./img/Vector.png" class="confirm-pin"></img>
-          <div class="membership-content__title-container membership-content__title-container_upgraded">
-            <div class="membership-content__trial-title">Annual</div>
-            <div class="membership-content__trial-price">71.99$/year</div>
+          <div class="plan-content__title-container plan-content__title-container_upgraded">
+            <div class="plan-content__trial-title">Annual</div>
+            <div class="plan-content__trial-price">71.99$/year</div>
           </div>
-          <div class="membership-content__trial-text">
+          <div class="plan-content__trial-text">
             If you pay for 12 months in advance, this corresponds to a price of
             only PLN 5.99/month.
           </div>
           <div
-            class="membership-content__buttons-container membership-content__buttons-container_upgraded"
+            class="plan-content__buttons-container plan-content__buttons-container_upgraded"
           >
-            <button class="membership-content__buy-button_main">Choose</button>
+            <button class="plan-content__buy-button_main">Choose</button>
           </div>
         </div>
+      </section>
+
+      <h2 class="sub-title sub-title__second">Create an account</h2>
+
+      <section class="account-creation-container">
+        <div class="initials-container">
+          <div><input type="text" placeholder="Name" class="account-name"><div class="half-underline half-underline__active"></div></div>
+          <div><input type="text" placeholder="Your last name" class="account-surname"><div class="half-underline"></div></div>
+          </div>
+
+          <div><input type="email" placeholder="Email" class="account-email"><div class="underline"></div></div>
+          <div><input type="password" placeholder="Password" class="account-password"><div class="underline"></div></div>
+
+          <div class="account-email-permission-container">
+            <input type="checkbox"  class="account-email-permission__checkbox" id="permission-checkbox" value="yes">
+            <label for="permission-checkbox"></label>
+            <p class="account-email-permission__text">Use my email address to send marketing promotions and offers from HBO Max (a WarnerMedia company) and Affiliates via email, social media and other channels</p>
+          </div>
+          <button class="account-create__button">create</button>
+          <p class="account-policy__text">To withdraw your consent (including any consent you have previously given) and to learn more about your rights and how to exercise them, please read the <a class="privacy-policy__link" href="#">Privacy Policy.</a></p>
       </section>
     </section>
   </body>
