@@ -205,12 +205,8 @@ body {
 }
 
 .account-creation-container {
-  /* display: flex;
-  justify-content: center; */
-  /* align-items: center; */
   width: 733px;
   height: 316px;
-  /* display: flex; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -228,8 +224,7 @@ input {
 
 .initials-container {
   display: flex;
-  /* justify-content: center; */
-  gap: 29px;
+  gap: 32px;
 }
 
 ::placeholder {
@@ -244,7 +239,6 @@ input {
 .account-name,
 .account-surname {
   width: 350px;
-  /* border: #e38b00 2px; */
   outline: none;
 }
 
@@ -258,13 +252,6 @@ input {
 .half-underline__active {
   background-color: #e38b00;
 }
-
-/* .name-line {
-  width: 2px;
-  height: 350px;
-  background-color: #e38b00;
-  display: flex;
-} */
 
 .account-email,
 .account-password {
@@ -283,7 +270,6 @@ input {
 
 .account-email-permission-container {
   display: flex;
-  /* align-items: center; */
   margin: 10px 0 0 -30px;
   gap: 15px;
 }
@@ -314,6 +300,7 @@ input {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+  cursor: pointer;
 }
 
 .account-email-permission__checkbox:checked + label::before {
@@ -335,7 +322,7 @@ input {
   color: #ffffff80;
 }
 
-.account-create__button {
+.account-create__submit {
   width: 100%;
   height: 40px;
   background-color: #0059c1;
