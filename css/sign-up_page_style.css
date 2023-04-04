@@ -1,0 +1,350 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1274px;
+  height: 1000px;
+  background-image: url("../img/7886115\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.header__link-container {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.header__link_left-position {
+  display: flex;
+  justify-content: space-around;
+  width: 178px;
+}
+
+.header__link_right-position {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+}
+
+.header__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.header__link:hover {
+  opacity: 1;
+}
+
+.company-logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.header__sign-in-button {
+  width: 121px;
+  height: 40px;
+  background-color: #0059c1;
+  border-radius: 12px;
+  border-style: none;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.header__sign-in-button:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.2, 1.2);
+}
+
+.sign-in-button__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 32px;
+}
+
+.sub-title__second {
+  margin: 32px 0 24px 0;
+}
+
+.plans-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 35px;
+}
+
+.plan-content__block {
+  width: 502px;
+  height: 250px;
+  background-color: #0059c1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 193, 0.5) 0%,
+    rgba(13, 0, 123, 0.5) 100%
+  );
+  border: 1px solid rgba(0, 89, 193, 0.5);
+  border-radius: 12px;
+}
+
+.confirm-pin {
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 475px;
+  bottom: 10px;
+}
+
+.plan-content__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 36px 32px 33px 32px;
+}
+
+.plan-content__title-container_upgraded {
+  margin: -7px 32px 33px 32px;
+}
+
+.plan-content__trial-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 20px;
+}
+
+.plan-content__trial-price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.plan-content__trial-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 30px 32px 0 32px;
+}
+
+.plan-content__buttons-container {
+  display: flex;
+  justify-content: end;
+  margin: 56px 32px 32px 0;
+}
+
+.plan-content__buttons-container_upgraded {
+  margin: 32px 32px 32px 0;
+}
+
+.plan-content__buy-button,
+.plan-content__buy-button_main {
+  width: 93px;
+  height: 40px;
+  background-color: #e38b00;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.plan-content__buy-button:hover,
+.plan-content__buy-button_main:hover {
+  background-color: #0059c1;
+  border: 1px solid #e38b00;
+  transition: all 0.5s ease-in-out;
+}
+
+.account-creation-container {
+  width: 733px;
+  height: 316px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: -3px;
+}
+
+.initials-container {
+  display: flex;
+  gap: 32px;
+}
+
+::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: inherit;
+  color: #ffffff80;
+}
+
+.account-name,
+.account-surname {
+  width: 350px;
+  outline: none;
+}
+
+.half-underline {
+  width: 350px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 12px;
+}
+
+.half-underline__active {
+  background-color: #e38b00;
+}
+
+.account-email,
+.account-password {
+  width: 100%;
+  margin-top: 24px;
+  font-family: inherit;
+  outline: none;
+}
+
+.underline {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 12px;
+}
+
+.account-email-permission-container {
+  display: flex;
+  margin: 10px 0 0 -30px;
+  gap: 15px;
+}
+
+.account-email-permission__checkbox {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+}
+
+.account-email-permission__checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.account-email-permission__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  cursor: pointer;
+}
+
+.account-email-permission__checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.account-email-permission__checkbox:not(:disabled):not(:checked)
+  + label:hover::before {
+  border-color: rgb(255, 255, 255);
+}
+
+.account-email-permission__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff80;
+}
+
+.account-create__submit {
+  width: 100%;
+  height: 40px;
+  background-color: #0059c1;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.account-policy__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 16px;
+}
+
+.privacy-policy__link {
+  color: #e38b00;
+}
