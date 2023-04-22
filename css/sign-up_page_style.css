@@ -27,13 +27,13 @@ body {
 .header__link-container {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 520px;
 }
 
 .header__link_left-position {
   display: flex;
   justify-content: space-around;
-  width: 178px;
+  width: 230px;
 }
 
 .header__link_right-position {
@@ -350,4 +350,161 @@ input:focus + .underline {
 
 .privacy-policy__link {
   color: #e38b00;
+}
+
+.footer__container {
+  height: 286px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.support__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.message__button {
+  height: 30px;
+  width: 142px;
+  background-color: #0059c1;
+  border-radius: 6px;
+  border-style: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.message__button:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.email__button {
+  height: 30px;
+  width: 44px;
+  background-color: #0059c1;
+  border-radius: 6px;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.email__button:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1, 1.1);
+}
+
+.phone__button {
+  height: 30px;
+  width: 44px;
+  background-color: #0059c1;
+  border-radius: 6px;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.phone__button:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.main-footer__container {
+  height: 286px;
+  width: 470px;
+  background-image: url("../img/throne.png");
+  background-position: center;
+  align-content: space-between;
+}
+
+.footer__links {
+  margin: 50px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__link,
+.agreement__link {
+  text-decoration: none;
+  color: #707070;
+}
+
+.footer__link:hover,
+.agreement__link:hover {
+  color: #ffffff;
+}
+
+.footer__link_deluxe {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline #9e00ff;
+  background: linear-gradient(180deg, #0059c1 0%, #9e00ff 77.08%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer__agreement {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.company-privacy__container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.company-conventions {
+  width: 280px;
+}
+
+.rights__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #707070;
+}
+
+.logo {
+  width: 73px;
+  height: 30px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.extensions__slogan {
+  text-align: right;
 }
