@@ -1,0 +1,360 @@
+@import "./colors.scss";
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    color: $white;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1274px;
+    height: 1550px;
+}
+.header {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    &__link-container {
+        display: flex;
+        justify-content: space-between;
+        width: 520px;
+    }
+    &__link_left-position {
+        display: flex;
+        justify-content: space-around;
+        width: 230px;
+    }
+    &__link_right-position {
+        display: flex;
+        justify-content: space-between;
+        width: 230px;
+    }
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-decoration: none;
+        color: $white;
+        opacity: 0.7;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__sign-in-button {
+        width: 121px;
+        height: 40px;
+        background-color: $darkBlue;
+        border-radius: 12px;
+        border-style: none;
+        text-transform: uppercase;
+        color: $white;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.2, 1.2);
+        }
+    }
+}
+.company-logo:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.sign-in-button__link {
+    text-decoration: none;
+    color: $white;
+}
+.topic__title {
+    margin-top: 35px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+}
+.cards__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 320px;
+    max-width: max-content;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.cards {
+    display: flex;
+    width: max-content;
+}
+.card {
+    margin-right: 24px;
+    border-radius: 15px;
+    width: 210px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &:hover {
+        transform: scale(1, 1);
+    }
+    &__container_opacity {
+        opacity: 0;
+        width: 210px;
+        border-radius: 15px;
+        height: 300px;
+        &:hover {
+            position: absolute;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(15px);
+        }
+    }
+    &__container_top-space {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 20px 0 20px;
+    }
+    &__star-img_top-space {
+        width: 15px;
+        height: 15px;
+        margin-top: -2px;
+    }
+    &__rate_top-space {
+        margin-left: 5px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: $yellow;
+    }
+    &__year_top-space {
+        color: rgba(255, 255, 255, 0.5);
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        align-content: right;
+    }
+    &__container_middle-space {
+        margin: 45px 0 0 20px;
+    }
+    &__season-text_middle-space {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    &__title-text_middle-space {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 1px;
+    }
+    &__main-text_middle-space {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: $lightGrey;
+    }
+    &__container_down-space {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    &__play-button_down-space {
+        width: 12px;
+        height: 15px;
+        margin-left: 16px;
+    }
+    &__watch-text_down-space {
+        text-transform: uppercase;
+        margin-right: 16px;
+    }
+}
+.rating-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.watch-button__container {
+    width: 170px;
+    height: 38px;
+    background-color: $darkBlue;
+    border-style: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    &:hover {
+        background-color: $orange;
+        color: rgb(255, 255, 255);
+        transition: all 0.5s ease-in-out;
+    }
+}
+.arrow {
+    position: absolute;
+    margin: 130px 0 0 1300px;
+}
+.footer__container {
+    height: 286px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.support__buttons {
+    display: flex;
+    gap: 10px;
+}
+.message__button {
+    height: 30px;
+    width: 142px;
+    background-color: $darkBlue;
+    border-radius: 6px;
+    border-style: none;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: $white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        transform: scale(1.1, 1.1);
+        transition: all 0.5s ease-in-out;
+    }
+}
+.email__button {
+    height: 30px;
+    width: 44px;
+    background-color: $darkBlue;
+    border-radius: 6px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.1, 1.1);
+    }
+}
+.phone__button {
+    height: 30px;
+    width: 44px;
+    background-color: $darkBlue;
+    border-radius: 6px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        transform: scale(1.1, 1.1);
+        transition: all 0.5s ease-in-out;
+    }
+}
+.main-footer__container {
+    height: 286px;
+    width: 470px;
+    background-image: url("../img/throne.png");
+    background-position: center;
+    align-content: space-between;
+}
+.footer__links {
+    margin: 50px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.footer__link,
+.agreement__link {
+    text-decoration: none;
+    color: $grey;
+    &:hover {
+        color: $white;
+    }
+}
+.footer__link_deluxe {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline $violet;
+    background: linear-gradient(180deg, $darkBlue 0%, $violet 77.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.footer__agreement {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.company-privacy__container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.company-conventions {
+    width: 280px;
+}
+.rights__text {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: $grey;
+}
+.logo {
+    width: 73px;
+    height: 30px;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.extensions__slogan {
+    text-align: right;
+}
+
+.hbomax-logo:hover {
+    opacity: 0.8;
+}
