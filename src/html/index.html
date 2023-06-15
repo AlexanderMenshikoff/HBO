@@ -30,7 +30,7 @@
             <a class="header__link" href="/#">schedule</a>
           </div>
         </nav>
-        <a class="sign-in-button__link" href="./sign-up_page.html"
+        <a class="sign-in-button__link"
           ><button class="header__sign-in-button">sign in</button></a
         >
       </header>
@@ -388,6 +388,81 @@
         </div>
       </footer>
     </section>
+    <section class="modal-window">
+      <div class="modal-closing__button">X</div>
+      <h1 class="main-title">Sign up</h1>
+
+      <h2 class="sub-title sub-title__second">Create an account</h2>
+
+      <section class="account-creation-container">
+        <form>
+          <div class="initials-container">
+            <div>
+              <input
+                type="text"
+                required
+                placeholder="Name"
+                class="account-name"
+              />
+              <div class="half-underline"></div>
+            </div>
+            <div>
+              <input
+                type="text"
+                required
+                placeholder="Your last name"
+                class="account-surname"
+              />
+              <div class="half-underline"></div>
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="email"
+              required
+              placeholder="Email"
+              class="account-email"
+            />
+            <div class="underline"></div>
+          </div>
+
+          <div>
+            <input
+              type="password"
+              required
+              placeholder="Password"
+              class="account-password"
+            />
+            <div class="underline"></div>
+          </div>
+
+          <div class="account-email-permission-container">
+            <input
+              type="checkbox"
+              class="account-email-permission__checkbox"
+              id="permission-checkbox"
+              value="yes"
+            />
+            <label for="permission-checkbox"></label>
+            <p class="account-email-permission__text">
+              Use my email address to send marketing promotions and offers from
+              HBO Max (a WarnerMedia company) and Affiliates via email, social
+              media and other channels
+            </p>
+          </div>
+
+          <input type="submit" value="create" class="account-create__submit" />
+          <p class="account-policy__text">
+            To withdraw your consent (including any consent you have previously
+            given) and to learn more about your rights and how to exercise them,
+            please read the
+            <a class="privacy-policy__link" href="#">Privacy Policy.</a>
+          </p>
+        </form>
+      </section>
+    </section>
+
     <script src="../js/script.js"></script>
   </body>
 </html>
