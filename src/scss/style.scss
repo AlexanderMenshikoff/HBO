@@ -526,3 +526,182 @@ ul {
 .hbomax-logo:hover {
     opacity: 0.8;
 }
+
+.modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    // opacity: 1;
+    visibility: hidden;
+    background-color: #000000;
+    width: 900px;
+    height: 520px;
+    border-radius: 10px;
+}
+
+.modal-window-visible {
+    // opacity: 0;
+    visibility: visible;
+}
+
+.modal-closing__button {
+    position: absolute;
+    right: 0;
+    margin: 10px 10px 0 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sign-in-button__link {
+    text-decoration: none;
+    color: $white;
+}
+.main-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+.sub-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 32px;
+    &__second {
+        margin: 32px 0 24px 0;
+    }
+}
+
+.account-creation-container {
+    width: 733px;
+    height: 316px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input {
+    color: $white;
+    background: transparent;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: -3px;
+    &:focus + .half-underline {
+        background-color: $orange;
+    }
+    &:focus + .underline {
+        background-color: $orange;
+    }
+}
+.initials-container {
+    display: flex;
+    gap: 32px;
+}
+::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: inherit;
+    color: $white;
+}
+.account-name,
+.account-surname {
+    width: 350px;
+    outline: none;
+}
+.half-underline {
+    width: 350px;
+    height: 2px;
+    background-color: $white;
+    margin-top: 12px;
+}
+.account-email,
+.account-password {
+    width: 100%;
+    margin-top: 24px;
+    font-family: inherit;
+    outline: none;
+}
+.underline {
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    margin-top: 12px;
+}
+.account-email-permission-container {
+    display: flex;
+    margin: 10px 0 0 -30px;
+    gap: 15px;
+}
+.account-email-permission__checkbox {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+    + label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid $white;
+            border-radius: 4px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+            cursor: pointer;
+        }
+    }
+    &:checked + label::before {
+        border-color: $blue;
+        background-color: $blue;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+    &:not(:disabled):not(:checked) + label:hover::before {
+        border-color: rgb(255, 255, 255);
+    }
+}
+.account-email-permission__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+}
+.account-create__submit {
+    width: 100%;
+    height: 40px;
+    background-color: $darkBlue;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.account-policy__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 16px;
+}
+.privacy-policy__link {
+    color: $orange;
+}
