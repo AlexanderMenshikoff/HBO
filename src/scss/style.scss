@@ -32,7 +32,7 @@ body {
     &__link_right-position {
         display: flex;
         justify-content: space-between;
-        width: 230px;
+        width: 250px;
     }
     &__link {
         font-style: normal;
@@ -301,6 +301,18 @@ body {
         transition: all 0.5s ease-in-out;
     }
 }
+
+.arrow {
+    position: absolute;
+    margin: 130px 0 0 1300px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    opacity: 0.5;
+}
+
 .subscriptions-container {
     height: 300px;
     display: flex;
@@ -533,7 +545,6 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    // opacity: 1;
     visibility: hidden;
     background-color: #000000;
     width: 900px;
@@ -542,7 +553,6 @@ ul {
 }
 
 .modal-window-visible {
-    // opacity: 0;
     visibility: visible;
 }
 
