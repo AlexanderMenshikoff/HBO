@@ -61,3 +61,21 @@ headerLinkCartoons.addEventListener("click", (e) => {
     behavior: "smooth",
   });
 });
+
+const creationPic = document.querySelector(".creation-container");
+const creationLogoImg = document.querySelector(".creation-logo__img");
+
+setInterval(() => {
+  creationPic.style.backgroundImage = 'url("../img/euphoria-pic.png")';
+  creationLogoImg.src = "../img/euphoria-logo.png";
+}, 4000);
+setInterval(() => {
+  creationPic.style.backgroundImage = 'url("../img/hod-pic.png")';
+  // creationLogoImg.style.width = "500px";
+  // creationLogoImg.style.height = "100px";
+  creationLogoImg.src = "../img/hod-logo.png";
+}, 8000);
+setInterval(() => {
+  creationPic.style.backgroundImage = 'url("../img/Joel&Ellie.png")';
+  creationLogoImg.src = "../img/tlou-title.png";
+}, 12000);
