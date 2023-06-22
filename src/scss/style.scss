@@ -32,7 +32,7 @@ body {
     &__link_right-position {
         display: flex;
         justify-content: space-between;
-        width: 250px;
+        width: 200px;
     }
     &__link {
         font-style: normal;
@@ -97,14 +97,21 @@ body {
 }
 .video-container {
     margin-bottom: 15px;
+    text-align: center;
 }
 .creation-logo__img {
     width: 600px;
-    height: 140px;
+    height: 120px;
     margin-bottom: 30px;
     z-index: 3;
     position: relative;
 }
+
+.creation-logo__img_smaller-picture {
+    width: 300px;
+    height: 100px;
+}
+
 .line-block__container {
     display: flex;
     justify-content: center;
@@ -124,7 +131,7 @@ body {
         height: 2px;
         width: 100px;
         border-radius: 5px;
-        animation: progressBar 12s ease-in-out infinite;
+        animation: progressBar 12s linear infinite;
         background-color: $yellow;
     }
 }
