@@ -190,6 +190,7 @@ body {
 
 .topic__title {
   margin-top: 35px;
+  margin-left: 10px;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -204,6 +205,7 @@ body {
   max-width: -moz-max-content;
   max-width: max-content;
   overflow-x: auto;
+  margin-left: 10px;
 }
 .cards__container::-webkit-scrollbar {
   display: none;
@@ -802,4 +804,141 @@ input:focus + .underline {
 
 .privacy-policy__link {
   color: #e38b00;
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    display: block;
+  }
+  .container {
+    width: 100vw;
+    height: 1550px;
+  }
+  .header {
+    margin: 0 30px 0 10px;
+  }
+  .creation-container {
+    width: 100vw;
+    height: 455px;
+    background-size: cover;
+  }
+  .creation-logo__img {
+    height: 120px;
+  }
+  .creation-logo__img_smaller-picture {
+    width: 300px;
+    height: 100px;
+  }
+  .arrow {
+    display: none;
+  }
+  .membership-content__block-main ul {
+    line-height: 25px;
+  }
+  .modal-window {
+    left: 47%;
+  }
+  .account-creation-container {
+    width: 733px;
+    height: 316px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .support-container {
+    margin-left: 10px;
+  }
+  .extensions__container {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 924px) {
+  body {
+    display: block;
+  }
+  .container {
+    width: 900px;
+    height: 1550px;
+  }
+  .header {
+    margin: 0 30px 0 10px;
+  }
+  .creation-container {
+    width: 900px;
+    height: 455px;
+    background-size: cover;
+  }
+  .creation-logo__img {
+    height: 120px;
+  }
+  .creation-logo__img_smaller-picture {
+    width: 300px;
+    height: 100px;
+  }
+  .arrow {
+    display: none;
+  }
+  .membership-content__block-main ul {
+    line-height: 25px;
+  }
+  .modal-window {
+    left: 47%;
+  }
+  .account-creation-container {
+    width: 733px;
+    height: 316px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscriptions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .membership-content__block {
+    width: 1000px;
+    height: 350px;
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  .footer__container {
+    margin-top: 750px;
+  }
+  .membership-content__trial-text {
+    text-align: left;
+    margin: 30px 3px 0 10px;
+  }
+  .support-container {
+    margin: 30px 0 0 10px;
+    position: relative;
+    left: 35%;
+    text-align: center;
+  }
+  .company-conventions img {
+    display: none;
+  }
+  .rights__text {
+    margin-top: 100px;
+  }
+  .extensions__container {
+    position: relative;
+    top: 40%;
+    right: 25%;
+  }
+  .membership-content__buttons-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .membership-content__buy-button,
+  .membership-content__trial-button {
+    width: 100%;
+    margin: 0 30px 0 30px;
+    height: 50px;
+  }
+  .support-container {
+    margin-left: 10px;
+  }
+  .extensions__container {
+    margin-right: 30px;
+  }
 }
