@@ -37,7 +37,7 @@ const smoothScrolling = (headerLink, topicTitle, num) => {
       let offsetPosition = 0;
       const topOffset = element.offsetHeight;
       const elementPosition = topicTitle.getBoundingClientRect().top;
-      if (document.querySelector(".menu.active")) {
+      if (document.querySelector(".burger-menu.active")) {
         offsetPosition = elementPosition - topOffset - num;
       } else {
         offsetPosition = elementPosition - topOffset;
