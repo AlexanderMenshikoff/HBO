@@ -23,31 +23,37 @@ const modalWindowDisplay = (btn) => {
 modalWindowDisplay(modalWindowOpenButton);
 modalWindowDisplay(modalWindowClosingButton);
 
-const headerLinkSeries = document.querySelector(".header__link.series");
+const headerLinkSeries = document.querySelectorAll(".header__link.series");
 const tvShowsTopicTitle = document.querySelector(".topic__title.tv-shows");
-const headerLinkMovies = document.querySelector(".header__link.movies");
+const headerLinkMovies = document.querySelectorAll(".header__link.movies");
 const moviesTopicTitle = document.querySelector(".topic__title.movies");
-const headerLinkCartoons = document.querySelector(".header__link.cartoons");
+const headerLinkCartoons = document.querySelectorAll(".header__link.cartoons");
 const cartoonsTopicTitle = document.querySelector(".topic__title.cartoons");
 
-const smoothScrolling = (headerLink, topicTitle) => {
-  headerLink.addEventListener("click", (e) => {
-    e.preventDefault();
+const smoothScrolling = (headerLink, topicTitle, num) => {
+  headerLink.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      e.preventDefault();
+      let offsetPosition = 0;
+      const topOffset = element.offsetHeight;
+      const elementPosition = topicTitle.getBoundingClientRect().top;
+      if (document.querySelector(".menu.active")) {
+        offsetPosition = elementPosition - topOffset - num;
+      } else {
+        offsetPosition = elementPosition - topOffset;
+      }
 
-    const topOffset = headerLink.offsetHeight;
-    const elementPosition = topicTitle.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - topOffset;
-
-    window.scrollBy({
-      top: offsetPosition,
-      behavior: "smooth",
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     });
   });
 };
 
-smoothScrolling(headerLinkSeries, tvShowsTopicTitle);
-smoothScrolling(headerLinkMovies, moviesTopicTitle);
-smoothScrolling(headerLinkCartoons, cartoonsTopicTitle);
+smoothScrolling(headerLinkSeries, tvShowsTopicTitle, 280);
+smoothScrolling(headerLinkMovies, moviesTopicTitle, 280);
+smoothScrolling(headerLinkCartoons, cartoonsTopicTitle, 280);
 
 const creationPic = document.querySelector(".creation-container");
 const creationLogoImg = document.querySelector(".creation-logo__img");
@@ -114,3 +120,14 @@ const displayCards = (arr, type, container) => {
 displayCards(data, "movie", cardsMovies);
 displayCards(data, "cartoon", cardsCartoons);
 displayCards(data, "show", cardsShows);
+
+const burgerMenuDisplay = () => {
+  const menuBtn = document.querySelector(".burger-menu__btn");
+  const menu = document.querySelector(".burger-menu");
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
+};
+
+burgerMenuDisplay();
