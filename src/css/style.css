@@ -892,7 +892,7 @@ input:focus + .underline {
     position: absolute;
     z-index: 5;
     display: block;
-    top: 4%;
+    top: 3%;
     right: 4.5%;
     cursor: pointer;
   }
@@ -949,7 +949,7 @@ input:focus + .underline {
   }
   .burger-menu__btn.active {
     position: fixed;
-    top: 4%;
+    top: 3%;
     right: 4.5%;
     cursor: pointer;
   }
