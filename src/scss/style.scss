@@ -208,6 +208,9 @@ body {
 .cards {
     display: flex;
     width: max-content;
+    &.movies, &.tv-shows, &.cartoons{
+        transition: margin-left 1s ease;
+    }
 }
 .card {
     margin-right: 24px;
@@ -237,7 +240,7 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 10px 20px 0 20px;
+        margin: 0px 20px -20px 20px;
     }
     &__star-img_top-space {
         width: 15px;
@@ -278,7 +281,7 @@ body {
         font-style: normal;
         font-weight: 900;
         font-size: 18px;
-        line-height: 1px;
+        line-height: 20px;
     }
     &__main-text_middle-space {
         font-family: "Lato";
@@ -335,11 +338,25 @@ body {
     margin: 130px 0 0 1300px;
     opacity: 1;
     cursor: pointer;
+    &:hover{
+        opacity: 0.5;
+    }
+    &.prev{
+        position: absolute;
+        margin: 130px 1300px 0 100px;
+        cursor: pointer;
+        transform: scale(-1, 1);
+        display: none;
+    }
+    &.next{
+        position: absolute;
+        margin: 130px 0 0 1300px;
+        opacity: 1;
+        cursor: pointer;
+    }
 }
 
-.arrow:hover {
-    opacity: 0.5;
-}
+
 
 .subscriptions-container {
     height: 300px;

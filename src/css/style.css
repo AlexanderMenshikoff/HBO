@@ -224,6 +224,9 @@ body {
   width: -moz-max-content;
   width: max-content;
 }
+.cards.movies, .cards.tv-shows, .cards.cartoons {
+  transition: margin-left 1s ease;
+}
 
 .card {
   margin-right: 24px;
@@ -255,7 +258,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 20px 0 20px;
+  margin: 0px 20px -20px 20px;
 }
 .card__star-img_top-space {
   width: 15px;
@@ -296,7 +299,7 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
-  line-height: 1px;
+  line-height: 20px;
 }
 .card__main-text_middle-space {
   font-family: "Lato";
@@ -355,9 +358,21 @@ body {
   opacity: 1;
   cursor: pointer;
 }
-
 .arrow:hover {
   opacity: 0.5;
+}
+.arrow.prev {
+  position: absolute;
+  margin: 130px 1300px 0 100px;
+  cursor: pointer;
+  transform: scale(-1, 1);
+  display: none;
+}
+.arrow.next {
+  position: absolute;
+  margin: 130px 0 0 1300px;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .subscriptions-container {
