@@ -771,25 +771,6 @@ const data = [
     type: "movie",
   },
   {
-    rank: 38,
-    title: "American History X",
-    thumbnail:
-      "https://m.media-amazon.com/images/M/MV5BZTJhN2FkYWEtMGI0My00YWM4LWI2MjAtM2UwNjY4MTI2ZTQyXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_UY67_CR0,0,45,67_AL_.jpg",
-    rating: "8.5",
-    id: "top38",
-    year: 2000,
-    image:
-      "https://m.media-amazon.com/images/M/MV5BZTJhN2FkYWEtMGI0My00YWM4LWI2MjAtM2UwNjY4MTI2ZTQyXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_QL75_UX380_CR0,1,380,562_.jpg",
-    description:
-      "A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did.",
-    trailer: "https://www.youtube.com/embed/XfQYHqsiN5g",
-    genre: ["Crime", "Drama"],
-    director: ["Tony Kaye"],
-    writers: ["David McKenna"],
-    imdbid: "tt0120586",
-    type: "movie",
-  },
-  {
     rank: 39,
     title: "The Departed",
     thumbnail:
@@ -1848,29 +1829,6 @@ const data = [
     ],
     imdbid: "tt1187043",
     type: "cartoon",
-  },
-  {
-    rank: 88,
-    title: "High and Low",
-    thumbnail:
-      "https://m.media-amazon.com/images/M/MV5BZGQ1NWZlYjctNDJmOS00MmU2LTg1ODItNmZiM2ZkNzJhNDI0XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY67_CR1,0,45,67_AL_.jpg",
-    rating: "8.4",
-    id: "top88",
-    year: 1963,
-    image:
-      "https://m.media-amazon.com/images/M/MV5BZGQ1NWZlYjctNDJmOS00MmU2LTg1ODItNmZiM2ZkNzJhNDI0XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_QL75_UY562_CR9,0,380,562_.jpg",
-    description:
-      "An executive of a Yokohama shoe company becomes a victim of extortion when his chauffeur's son is kidnapped by mistake and held for ransom.",
-    trailer: "https://www.youtube.com/embed/LV3z2Ytxu90",
-    genre: ["Crime", "Drama", "Mystery"],
-    director: ["Akira Kurosawa"],
-    writers: [
-      "Hideo Oguni (screenplay)",
-      "Ryûzô Kikushima (screenplay)",
-      "Eijirô Hisaita (screenplay)",
-    ],
-    imdbid: "tt0057565",
-    type: "movie",
   },
   {
     rank: 89,
