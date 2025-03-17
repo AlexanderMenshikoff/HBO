@@ -131,3 +131,34 @@ const burgerMenuDisplay = () => {
 };
 
 burgerMenuDisplay();
+
+
+const arrowNextTvShows = document.querySelector(".arrow.next.tv-shows")
+const arrowPrevTvShows = document.querySelector(".arrow.prev.tv-shows")
+const arrowNextMovies = document.querySelector(".arrow.next.movies")
+const arrowPrevTvMovies = document.querySelector(".arrow.prev.movies")
+const arrowNextTvCartoons = document.querySelector(".arrow.next.cartoons")
+const arrowPrevCartoons = document.querySelector(".arrow.prev.cartoons")
+
+
+
+const slideArrow = (cardContainerArrow, cardContainer , dir, type) => 
+  cardContainerArrow.addEventListener('click', () => {
+    const currentMargin = parseInt(getComputedStyle(cardContainer).marginLeft, 10);
+    let newMargin = 0;
+    dir === 'next' ? newMargin = currentMargin - 1000 : newMargin = currentMargin + 1000;
+    const currentWidth = cardContainer.clientWidth;
+    Math.abs(newMargin) <= currentWidth - 500 ? cardContainer.style.marginLeft = newMargin + 'px' : '';
+    newMargin === 0 ? type.style.display = 'none' : type.style.display = 'block';
+  })
+
+  if(window.innerWidth >= 1880){
+    slideArrow(arrowNextTvShows, cardsShows, 'next', arrowPrevTvShows);
+    slideArrow(arrowPrevTvShows, cardsShows, 'prev', arrowPrevTvShows);
+    slideArrow(arrowNextMovies, cardsMovies, 'next', arrowPrevTvMovies);
+    slideArrow(arrowPrevTvMovies, cardsMovies, 'prev', arrowPrevTvMovies);
+    slideArrow(arrowNextTvCartoons, cardsCartoons, 'next', arrowPrevCartoons);
+    slideArrow(arrowPrevCartoons, cardsCartoons, 'prev', arrowPrevCartoons);
+   }
+
+  
